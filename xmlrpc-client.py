@@ -4,8 +4,8 @@
 
 import xmlrpclib, time, sys
 
-s = xmlrpclib.Server('http://localhost:8080/xmlrpc/')
-#s = xmlrpclib.Server('http://takipi-xmlrpc.appspot.com/xmlrpc/')
+#s = xmlrpclib.Server('http://localhost:8080/xmlrpc/')
+s = xmlrpclib.Server('http://takipi-xmlrpc.appspot.com/xmlrpc/')
 
 op = sys.argv[1]
 cmd = getattr(s.takipi, op)
